@@ -43,18 +43,6 @@
       },
       {
         "type": "AlexaInterface",
-        "interface": "Alexa.PowerController",
-        "version": "3",
-        "properties": {
-          "supported": [
-            {
-              "name": "powerState"
-            }
-          ]
-        }
-      },
-      {
-        "type": "AlexaInterface",
         "interface": "Alexa",
         "version": "3"
       }
