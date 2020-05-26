@@ -7,7 +7,7 @@
     "width": 1280,
     "height": 720
   },
-  "authorizationType": "NONE",
+  "authorizationType": "BASIC",
   "videoCodec": "H264",
   "audioCodec": "AAC"
 }
