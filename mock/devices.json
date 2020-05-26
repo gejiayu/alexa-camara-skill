@@ -50,9 +50,7 @@
             {
               "name": "powerState"
             }
-          ],
-          "proactivelyReported": true,
-          "retrievable": true
+          ]
         }
       },
       {
