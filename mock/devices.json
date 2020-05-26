@@ -3,7 +3,7 @@
         "endpointId": "uniqueIdOfCameraEndpoint",
         "manufacturerName": "the manufacturer name of the endpoint",
         "modelName": "the model name of the endpoint",
-        "friendlyName": "Camera",
+        "friendlyName": "My front door camera",
         "description": "a description that is shown to the customer",
         "displayCategories": [
             "CAMERA"
