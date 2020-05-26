@@ -3,7 +3,7 @@
     "endpointId": "unique ID of the endpoint",
     "manufacturerName": "the manufacturer name of the endpoint",
     "description": "a description that is shown in the Alexa app",
-    "friendlyName": "My front door camera",
+    "friendlyName": "Front door camera",
     "displayCategories": ["CAMERA"],
     "cookie": {},
     "capabilities": [
