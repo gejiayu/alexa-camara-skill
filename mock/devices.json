@@ -1,53 +1,125 @@
-[
-    {
-        "endpointId": "uniqueIdOfCameraEndpoint",
-        "manufacturerName": "the manufacturer name of the endpoint",
-        "modelName": "the model name of the endpoint",
-        "friendlyName": "My front door camera",
-        "description": "a description that is shown to the customer",
-        "displayCategories": [
-            "CAMERA"
-        ],
-        "cookie": {
-            "key1": "arbitrary key/value pairs for skill to reference this endpoint.",
-            "key2": "There can be multiple entries",
-            "key3": "but they should only be used for reference purposes.",
-            "key4": "This is not a suitable place to maintain current endpoint state."
+{
+    "event": {
+        "header": {
+            "namespace": "Alexa.Discovery",
+            "name": "Discover.Response",
+            "payloadVersion": "3",
+            "messageId": "<message id>"
         },
-        "capabilities": [
-            {
-                "type": "AlexaInterface",
-                "interface": "Alexa.RTCSessionController",
-                "version": "3",
-                "configuration": {
-                    "isFullDuplexAudioSupported": true
-                }
-            },
-            {
-                "type": "AlexaInterface",
-                "interface": "Alexa.MediaMetadata",
-                "version": "3",
-                "proactivelyReported": true
-            },
-            {
-                "type": "AlexaInterface",
-                "interface": "Alexa.EndpointHealth",
-                "version": "3",
-                "properties": {
-                    "supported": [
-                        {
-                            "name": "connectivity"
-                        }
+        "payload": {
+            "endpoints": [
+                {
+                    "endpointId": "<unique ID of the endpoint>",
+                    "manufacturerName": "<the manufacturer name of the endpoint>",
+                    "description": "<a description that is shown in the Alexa app>",
+                    "friendlyName": "My front door camera",
+                    "displayCategories": [
+                        "CAMERA"
                     ],
-                    "proactivelyReported": true,
-                    "retrievable": true
+                    "cookie": {
+                        "key1": "arbitrary key/value pairs for skill to reference this endpoint.",
+                        "key2": "There can be multiple entries",
+                        "key3": "but they should only be used for reference purposes.",
+                        "key4": "This is not a suitable place to maintain current endpoint state."
+                    },
+                    "capabilities": [
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa.CameraStreamController",
+                            "version": "3",
+                            "cameraStreamConfigurations": [
+                                {
+                                    "protocols": [
+                                        "RTSP"
+                                    ],
+                                    "resolutions": [
+                                        {
+                                            "width": 1920,
+                                            "height": 1080
+                                        },
+                                        {
+                                            "width": 1280,
+                                            "height": 720
+                                        }
+                                    ],
+                                    "authorizationTypes": [
+                                        "BASIC"
+                                    ],
+                                    "videoCodecs": [
+                                        "H264",
+                                        "MPEG2"
+                                    ],
+                                    "audioCodecs": [
+                                        "G711"
+                                    ]
+                                },
+                                {
+                                    "protocols": [
+                                        "RTSP"
+                                    ],
+                                    "resolutions": [
+                                        {
+                                            "width": 1920,
+                                            "height": 1080
+                                        },
+                                        {
+                                            "width": 1280,
+                                            "height": 720
+                                        }
+                                    ],
+                                    "authorizationTypes": [
+                                        "NONE"
+                                    ],
+                                    "videoCodecs": [
+                                        "H264"
+                                    ],
+                                    "audioCodecs": [
+                                        "AAC"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa.PowerController",
+                            "version": "3"
+                        },
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa.RTCSessionController",
+                            "version": "3",
+                            "configuration": {
+                                "isFullDuplexAudioSupported": true
+                            }
+                        },
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa.MediaMetadata",
+                            "version": "3",
+                            "proactivelyReported": true
+                        },
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa.EndpointHealth",
+                            "version": "3",
+                            "properties": {
+                                "supported": [
+                                    {
+                                        "name": "connectivity"
+                                    }
+                                ],
+                                "proactivelyReported": true,
+                                "retrievable": true
+                            }
+                        },
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa",
+                            "version": "3"
+                        }
+                    ]
                 }
-            },
-            {
-                "type": "AlexaInterface",
-                "interface": "Alexa",
-                "version": "3"
-            }
-        ]
+            ]
+        }
     }
-]
+}
