@@ -2,8 +2,8 @@
   {
     "endpointId": "<unique ID of the endpoint>",
     "manufacturerName": "<the manufacturer name of the endpoint>",
-    "description": "<a description that appears in the Alexa app>",
-    "friendlyName": "Front door camera",
+    "description": "<a description that is shown in the Alexa app>",
+    "friendlyName": "My front door camera",
     "displayCategories": ["CAMERA"],
     "cookie": {},
     "capabilities": [
@@ -33,6 +33,20 @@
         "interface": "Alexa.MediaMetadata",
         "version": "3",
         "proactivelyReported": true
+      },
+      {
+        "type": "AlexaInterface",
+        "interface": "Alexa.EndpointHealth",
+        "version": "3",
+        "properties": {
+          "supported": [
+            {
+              "name":"connectivity"
+            }
+          ],
+          "proactivelyReported": true,
+          "retrievable": true
+        }
       },
       {
         "type": "AlexaInterface",
