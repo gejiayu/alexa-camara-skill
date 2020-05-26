@@ -3,10 +3,7 @@
   "expirationTime": "2020-06-03T16:20:50.52Z",
   "idleTimeoutSeconds": 30,
   "protocol": "RTSP",
-  "resolution": {
-    "width": 1280,
-    "height": 720
-  },
+  "resolution": {"width": 1920, "height": 1080},
   "authorizationType": "BASIC",
   "videoCodec": "H264",
   "audioCodec": "AAC"
