@@ -12,10 +12,10 @@
         "interface": "Alexa.CameraStreamController",
         "version": "3",
         "cameraStreamConfigurations" : [
-            {
+           {
               "protocols": ["RTSP"],
-              "resolutions": [{"width":1920, "height":1080}],
-              "authorizationTypes": ["BASIC"],
+              "resolutions": [{"width":1920, "height":1080}, {"width":1280, "height":720}],
+              "authorizationTypes": ["NONE"],
               "videoCodecs": ["H264"],
               "audioCodecs": ["AAC"]
            }
