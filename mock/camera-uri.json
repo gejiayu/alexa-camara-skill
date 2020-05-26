@@ -1,5 +1,5 @@
 {
-  "uri": "rtsp://120.92.14.134:443/live/test",
+  "uri": "rtsp://username:password@120.92.14.134:443/live/test",
   "expirationTime": "2020-06-03T16:20:50.52Z",
   "idleTimeoutSeconds": 30,
   "protocol": "RTSP",
