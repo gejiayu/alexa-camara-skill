@@ -4,7 +4,7 @@
   "idleTimeoutSeconds": 30,
   "protocol": "RTSP",
   "resolution": {"width": 1280, "height": 720},
-  "authorizationType": "BASIC",
+  "authorizationType": "NONE",
   "videoCodec": "H264",
   "audioCodec": "AAC"
 }
