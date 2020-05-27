@@ -47,34 +47,5 @@
         "version": "3"
       }
     ]
-  },
-  {
-    "endpointId": "imilab_test002",
-    "manufacturerName": "imilab_test002",
-    "description": "imilab_test002",
-    "friendlyName": "front door light",
-    "displayCategories": ["LIGHT"],
-    "cookie": {},
-    "capabilities": [
-      {
-        "type": "AlexaInterface",
-        "interface": "Alexa.PowerController",
-        "version": "3",
-        "properties": {
-          "supported": [
-            {
-              "name": "powerState"
-            }
-          ],
-          "proactivelyReported": true,
-          "retrievable": true
-        }
-      },
-      {
-        "type": "AlexaInterface",
-        "interface": "Alexa",
-        "version": "3"
-      }
-    ]
   }
 ]
