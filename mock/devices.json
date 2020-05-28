@@ -13,7 +13,7 @@
         "version": "3",
         "cameraStreamConfigurations" : [
            {
-              "protocols": ["RTSP"],
+              "protocols": ["RTSPS"],
               "resolutions": [{"width":1920, "height":1080}],
               "authorizationTypes": ["NONE"],
               "videoCodecs": ["H264"],
