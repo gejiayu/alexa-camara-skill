@@ -14,7 +14,7 @@
         "cameraStreamConfigurations" : [
            {
               "protocols": ["RTSP"],
-              "resolutions": [{"width":1920, "height":1080}],
+              "resolutions": [{"width":1280, "height":720}],
               "authorizationTypes": ["NONE"],
               "videoCodecs": ["H264"],
               "audioCodecs": ["AAC"]
