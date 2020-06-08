@@ -6,5 +6,5 @@
   "resolution": {"width": 1280, "height": 720},
   "authorizationType": "NONE",
   "videoCodec": "H264",
-  "audioCodec": "AAC"
+  "audioCodec": "pcm_alaw"
 }
